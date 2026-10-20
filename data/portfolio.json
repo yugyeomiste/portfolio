@@ -594,27 +594,26 @@
     },
     {
       "slug": "aquarelle-manga",
-      "title": "Aquarelle"
-      ,
+      "title": "Red Petals",
       "subtitle": "Aquarelle",
       "category": "illustration",
       "tech": [
         "Aquarelle"
       ],
-      "summary": "Une aquarelle inspirée du manga.",
+      "summary": "Une aquarelle aux pétales rouges.",
       "description": [
-        "Une aquarelle aux couleurs vives, inspirée de l’esthétique manga. Ici je me suis laissé plus de liberté : l’idée était surtout de faire passer une émotion."
+        "Une aquarelle aux couleurs vives, avec des pétales rouges qui tombent autour du personnage. Ici je me suis laissé plus de liberté : l’idée était surtout de faire passer une émotion."
       ],
       "cover": {
         "type": "image",
         "src": "assets/images/aquarelle-manga-cover.jpg",
-        "alt": "Aquarelle d’inspiration manga"
+        "alt": "Aquarelle Red Petals"
       },
       "media": [
         {
           "type": "image",
           "src": "assets/images/aquarelle-manga-1.jpg",
-          "alt": "Aquarelle d’inspiration manga"
+          "alt": "Aquarelle Red Petals"
         }
       ],
       "context": "Projet personnel",
