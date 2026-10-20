@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Romana Azizi · Développement, 3D & création numérique</title>
+  <meta name="description" content="Portfolio de Romana Azizi, élève ingénieure IMAC à l’ESIEE Paris : développement C++ / OpenGL et web, 3D sous Blender, animation et illustration.">
+  <meta property="og:title" content="Romana Azizi · Portfolio">
+  <meta property="og:description" content="Développement, 3D et création numérique. Recherche un stage en développement de 12 semaines dès mai 2027.">
+  <meta name="theme-color" content="#d9d5cc">
+  <link rel="icon" href="assets/images/signature.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400&family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div data-include="header"></div>
+
+  <main class="has-trail">
+    <!-- Trait de crayon qui se dessine au défilement, avec l’étoile en tête -->
+    <svg class="scroll-trail" aria-hidden="true"><path class="trail-ghost"/><path class="trail-ink"/></svg>
+    <span class="trail-head doodle d-star" aria-hidden="true"></span>
+    <div class="hero-panel">
+            <section class="hero container">
+        <div class="hero-text">
+          <p class="hello reveal">Bonjour, moi c’est Romana <span class="doodle d-star hello-star" aria-hidden="true"></span></p>
+          <h1 class="reveal">Future ingénieure IMAC, je conçois des expériences interactives entre code et&nbsp;3D.</h1>
+          <div class="actions reveal">
+            <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+            <a class="btn btn-secondary" href="assets/cv-romana-azizi.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+            </div>
+          <p class="lead reveal">En cycle ingénieur IMAC à l’ESIEE Paris, je passe volontiers de mon carnet de croquis à Blender, et de Blender au code. J’aime construire des projets qui se voient, qui bougent et qui fonctionnent. Je cherche un stage en développement de 12 semaines à partir de mai 2027.</p>
+        </div>
+        <figure class="hero-illu reveal">
+          <img class="portrait" src="assets/images/autoportrait.jpg" alt="Autoportrait dessiné par Romana Azizi">
+          <span class="doodle d-star d-hero-1" aria-hidden="true"></span>
+          <span class="doodle d-sparkles d-hero-2" aria-hidden="true"></span>
+          <span class="doodle d-swirl d-hero-3" aria-hidden="true"></span>
+        </figure>
+        <dl class="facts reveal">
+          <div><dt>Formation</dt><dd>Cycle ingénieur IMAC<br><span>ESIEE Paris · 2025 – 2028</span></dd></div>
+          <div><dt>Stack</dt><dd>C++ · OpenGL · Blender<br><span>Python · Java · Web</span></dd></div>
+          <div><dt>Langues</dt><dd>Anglais C1<br><span>TOEIC 945 / 1000</span></dd></div>
+        </dl>
+      </section>
+    </div>
+
+    <section class="section container" id="projets">
+      <div class="section-head">
+        <div>
+          <h2>Projets</h2>
+          <p class="section-note">Projets d’école et projets perso, en code comme en 3D.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrer les projets">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">Tous</button>
+          <button class="filter" data-filter="code" aria-pressed="false">Développement</button>
+          <button class="filter" data-filter="3d" aria-pressed="false">3D</button>
+          <button class="filter" data-filter="animation" aria-pressed="false">Animation</button>
+          <button class="filter" data-filter="video" aria-pressed="false">Vidéo</button>
+          <button class="filter" data-filter="illustration" aria-pressed="false">Illustration</button>
+        </div>
+      </div>
+      <div id="grid" class="thread" aria-live="polite">
+        <p class="loading">Chargement des projets…</p>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-head">
+        <div>
+          <h2>Compétences</h2>
+        </div>
+        <a class="link-arrow" href="qui-suis-je.html">En savoir plus sur mon parcours</a>
+      </div>
+      <div id="skills" class="skills"></div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

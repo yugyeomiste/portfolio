@@ -1,0 +1,856 @@
+{
+  "projects": [
+    {
+      "slug": "city-folk",
+      "title": "City Folk",
+      "subtitle": "Scène 3D temps réel",
+      "category": "code",
+      "year": "2025 – 2026",
+      "context": "Projet de synthèse d’images · IMAC S1",
+      "team": "Binôme avec Souksana Phetdara",
+      "role": "Train (modèle et animation), caméra libre, chargement du circuit JSON, compatibilité Windows / macOS",
+      "tech": [
+        "C++17",
+        "OpenGL 4.1",
+        "GLFW",
+        "CMake",
+        "nlohmann/json"
+      ],
+      "summary": "Une petite scène 3D où un train fait le tour d’un circuit, codée en C++ avec OpenGL.",
+      "description": [
+        "Projet de synthèse d’images du premier semestre, en binôme avec Souksana Phetdara. On voulait une petite scène dans l’esprit d’Animal Crossing, avec une gare et un train qui tourne sans s’arrêter.",
+        "Le circuit est décrit case par case dans un fichier JSON. Le programme lit ce fichier et choisit lui-même où poser des rails droits ou des virages. De mon côté, j’ai fait le train, son déplacement le long des rails et la caméra qu’on promène librement dans la scène.",
+        "On a aussi travaillé la lumière, avec un soleil et un phare à l’avant du train, et réglé un problème que je n’avais pas vu venir : faire tourner le même code sur Windows et sur Mac."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/cityfolk-cover.jpg",
+        "alt": "Le train et la gare de City Folk"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/videos/cityfolk.mp4",
+          "poster": "assets/images/cityfolk-poster.jpg",
+          "caption": "Le train sur son circuit"
+        }
+      ],
+      "links": [
+        {
+          "label": "Code source",
+          "url": "https://github.com/yugyeomiste/SNOWPIERCER",
+          "type": "github"
+        },
+        {
+          "label": "Rapport de projet (PDF)",
+          "url": "https://github.com/yugyeomiste/SNOWPIERCER/blob/main/Rapport%20de%20projet%20SI.pdf"
+        }
+      ],
+      "shots": [
+        "assets/images/cityfolk-cover.jpg",
+        "assets/images/cityfolk-poster.jpg"
+      ],
+      "tile": "big"
+    },
+    {
+      "slug": "sos-villageois",
+      "title": "SOS Villageois",
+      "subtitle": "Application web",
+      "category": "code",
+      "year": "2026",
+      "context": "Projet d’architecture logicielle · IMAC S2",
+      "team": "Binôme avec Souksana Phetdara",
+      "role": "Annonces, API Nookipedia, commentaires, réactions et tri, export de la base",
+      "tech": [
+        "Python",
+        "Flask",
+        "MySQL / MariaDB",
+        "JavaScript (fetch)",
+        "API REST"
+      ],
+      "summary": "Une appli d’entraide entre voisins façon Animal Crossing, avec un serveur Python et une vraie base de données.",
+      "description": [
+        "Projet d’architecture logicielle du deuxième semestre, en binôme. Sur SOS Villageois, chacun choisit un villageois d’Animal Crossing comme avatar, publie une annonce quand il a besoin d’un coup de main et indique quand il est libre pour aider les autres.",
+        "Le serveur est écrit en Python avec Flask, les données sont stockées dans MySQL et toutes les pages passent par une API REST que nous avons documentée avec Swagger.",
+        "Je me suis occupée des annonces, de la liste des villageois récupérée depuis l’API Nookipedia, des commentaires, des réactions et du tri des annonces par urgence."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/sos-cover.jpg",
+        "alt": "Écran d’accueil de SOS Villageois"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/sos-accueil.jpg",
+          "alt": "Écran d’accueil façon téléphone",
+          "caption": "L’accueil, façon téléphone d’Animal Crossing"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/sos-annonces.jpg",
+          "alt": "Liste des annonces",
+          "caption": "Les annonces, triables par date ou par urgence"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/sos-detail.jpg",
+          "alt": "Détail d’une annonce",
+          "caption": "Une annonce avec ses réactions et ses commentaires"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/sos-dispos.jpg",
+          "alt": "Liste des disponibilités",
+          "caption": "Les disponibilités des habitants"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/sos-inscription.jpg",
+          "alt": "Inscription avec choix du villageois",
+          "caption": "L’inscription et le choix du villageois"
+        }
+      ],
+      "links": [
+        {
+          "label": "Code source",
+          "url": "https://github.com/souksana/sos-villageois",
+          "type": "github"
+        }
+      ],
+      "shots": [
+        "assets/images/sos-cover.jpg",
+        "assets/images/sos-detail.jpg"
+      ]
+    },
+    {
+      "slug": "find-your-anime",
+      "title": "Find Your Anime",
+      "subtitle": "Site web",
+      "category": "code",
+      "year": "2025",
+      "context": "Projet web · IMAC",
+      "team": "Binôme",
+      "tech": [
+        "JavaScript (modules ES)",
+        "HTML",
+        "CSS",
+        "Fetch API",
+        "Jikan API"
+      ],
+      "summary": "Un site pour voir les animes du moment, ou en tirer un au hasard quand on ne sait pas quoi regarder.",
+      "description": [
+        "Projet web en binôme. Le site récupère ses données sur l’API Jikan, qui reprend la base de MyAnimeList, et propose deux pages : le classement des animes du moment et un tirage au hasard.",
+        "C’était l’occasion d’écrire un JavaScript propre, découpé en modules, de gérer les cas où l’API renvoie des informations incomplètes, et de faire une mise en page qui tient aussi bien sur ordinateur que sur téléphone."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/findyouranime-1.jpg",
+        "alt": "Page d’accueil de Find Your Anime"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/findyouranime-1.jpg",
+          "alt": "Page d’accueil de Find Your Anime",
+          "caption": "Page d’accueil"
+        },
+        {
+          "type": "video",
+          "src": "assets/videos/findyouranime.mp4",
+          "poster": "assets/images/findyouranime-poster.jpg",
+          "caption": "Démo du site"
+        }
+      ],
+      "links": [
+        {
+          "label": "Voir le site",
+          "url": "https://yugyeomiste.github.io/repo-web-api/",
+          "type": "live"
+        },
+        {
+          "label": "Code source",
+          "url": "https://github.com/yugyeomiste/repo-web-api",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "slug": "maquette-cite-descartes",
+      "title": "Maquette de la Cité Descartes",
+      "subtitle": "Modélisation et fabrication",
+      "category": "3d",
+      "year": "2026 · en cours",
+      "context": "Projet tutoré · Fablab Descartes",
+      "team": "Équipe de 3",
+      "tech": [
+        "Fusion 360",
+        "Impression 3D",
+        "Découpe bois"
+      ],
+      "summary": "La Cité Descartes en maquette, de la modélisation 3D jusqu’à la fabrication.",
+      "description": [
+        "Projet tutoré en cours, en équipe de trois. On part des vraies données de relief du quartier pour le modéliser sous Fusion 360, avec ses principaux bâtiments.",
+        "La maquette sera ensuite fabriquée au Fablab Descartes, en impression 3D et en découpe bois. Les photos arriveront quand elle sera terminée."
+      ],
+      "cover": {
+        "type": "placeholder",
+        "label": "Cité Descartes"
+      },
+      "media": [],
+      "links": []
+    },
+    {
+      "slug": "systeme-solaire",
+      "title": "Système solaire",
+      "subtitle": "Simulation en Java",
+      "category": "code",
+      "tech": [
+        "Java"
+      ],
+      "summary": "Les planètes du système solaire en mouvement, simulées en Java.",
+      "description": [
+        "Une simulation écrite en Java. Chaque planète tourne autour du Soleil sur son orbite, à sa propre vitesse, et l’affichage se met à jour en continu."
+      ],
+      "cover": {
+        "type": "video",
+        "src": "assets/videos/systeme-solaire-preview.mp4",
+        "poster": "assets/images/systeme-solaire-preview-poster.jpg"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/videos/systeme-solaire.mp4",
+          "poster": "assets/images/systeme-solaire-poster.jpg"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/systeme-solaire-poster.jpg"
+      ]
+    },
+    {
+      "slug": "stargirl",
+      "title": "StarGirl",
+      "subtitle": "Personnage 3D",
+      "category": "3d",
+      "tech": [
+        "Blender"
+      ],
+      "summary": "Un personnage que j’ai dessiné puis modélisé en 3D, une étoile lumineuse entre les mains.",
+      "description": [
+        "Tout est parti d’un croquis. J’ai dessiné le personnage de face et de profil, choisi sa palette, puis je l’ai modélisé sous Blender et mis en pose.",
+        "Pour les couleurs, je me suis inspirée de Takashi Murakami, et pour l’univers, de Naoko Takeuchi et de Hayao Miyazaki. L’étoile qu’elle tient est animée et éclaire la scène."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/stargirl-cover.jpg",
+        "alt": "StarGirl"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/stargirl-1.jpg",
+          "alt": "StarGirl, rendu final",
+          "caption": "Rendu final"
+        },
+        {
+          "type": "video",
+          "src": "assets/videos/stargirl.mp4",
+          "poster": "assets/images/stargirl-poster.jpg",
+          "caption": "L’étoile animée"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/stargirl-2.jpg",
+          "alt": "StarGirl, gros plan",
+          "caption": "Plan large"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/stargirl-cover.jpg"
+      ],
+      "tile": "big"
+    },
+    {
+      "slug": "sailormoon",
+      "title": "Sailor Moon",
+      "subtitle": "Modélisation de personnage",
+      "category": "3d",
+      "tech": [
+        "Blender"
+      ],
+      "summary": "Sailor Moon modélisée sous Blender, d’après le design de l’anime.",
+      "description": [
+        "Un fan art en 3D. J’ai essayé de rester fidèle au design de l’anime tout en lui donnant un rendu plus actuel, puis je l’ai mise dans une pose tirée de la série. Ce projet m’a surtout fait travailler la modélisation du personnage et ses matériaux."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/sailormoon-cover.jpg",
+        "alt": "Sailor Moon"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/sailormoon-1.jpg",
+          "alt": "Rendu 3D de Sailor Moon"
+        },
+        {
+          "type": "video",
+          "src": "assets/videos/sailormoon.mp4",
+          "poster": "assets/images/sailormoon-poster.jpg"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/sailormoon-cover.jpg",
+        "assets/images/sailormoon-poster.jpg"
+      ],
+      "tile": "tall"
+    },
+    {
+      "slug": "desk-3d",
+      "title": "Desk",
+      "subtitle": "Intérieur 3D",
+      "category": "3d",
+      "tech": [
+        "Blender"
+      ],
+      "summary": "Un bureau modélisé sous Blender, jusque dans les petits objets.",
+      "description": [
+        "J’ai modélisé un bureau complet sous Blender, avec l’écran, la chaise et tous les petits objets posés dessus. Pour que la scène ne reste pas figée, un stylo tombe du bureau dans l’animation."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/desk-cover.jpg",
+        "alt": "Desk 3D"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/desk-1.jpg",
+          "alt": "Bureau modélisé en 3D"
+        },
+        {
+          "type": "video",
+          "src": "assets/videos/desk.mp4",
+          "poster": "assets/images/desk-poster.jpg"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/desk-cover.jpg"
+      ],
+      "tile": "wide"
+    },
+    {
+      "slug": "coffee-shop",
+      "title": "Coffee Shop",
+      "subtitle": "Diorama 3D",
+      "category": "3d",
+      "tech": [
+        "Blender"
+      ],
+      "summary": "Un petit café en 3D, vu en isométrique et éclairé de nuit.",
+      "description": [
+        "Un diorama modélisé sous Blender. J’ai surtout travaillé les matériaux et la lumière, avec la lueur chaude des vitrines et du lampadaire au milieu de la nuit."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/coffee-shop-cover.jpg",
+        "alt": "Coffee Shop"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/coffee-shop-1.jpg",
+          "alt": "Café modélisé en 3D"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/coffee-shop-cover.jpg"
+      ]
+    },
+    {
+      "slug": "dark-peach",
+      "title": "Dark Peach",
+      "subtitle": "Fan art 3D",
+      "category": "3d",
+      "tech": [
+        "Blender"
+      ],
+      "summary": "Peach, en version beaucoup plus sombre.",
+      "description": [
+        "Un fan art 3D de Peach, de l’univers Mario, que j’ai voulu plus inquiétant que l’original. Je suis partie d’une image de référence et j’ai joué sur les textures et l’éclairage pour trouver un rendu entre réalisme et cartoon."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/dark-peach-cover.jpg",
+        "alt": "Dark Peach"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/dark-peach-1.jpg",
+          "alt": "Dark Peach, gros plan"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/dark-peach-2.jpg",
+          "alt": "Dark Peach"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/dark-peach-cover.jpg",
+        "assets/images/dark-peach-2.jpg"
+      ],
+      "tile": "tall"
+    },
+    {
+      "slug": "kittyone",
+      "title": "KittyOne",
+      "subtitle": "Rigging et animation",
+      "category": "animation",
+      "tech": [
+        "Blender",
+        "Rigging"
+      ],
+      "summary": "Un chat noir modélisé, riggé et animé sous Blender.",
+      "description": [
+        "J’ai modélisé ce chat, je lui ai construit un squelette pour pouvoir l’animer, puis je l’ai fait bouger. Le plus difficile a été d’obtenir des déplacements naturels : un animal à quatre pattes ne bouge pas du tout comme un personnage."
+      ],
+      "cover": {
+        "type": "video",
+        "src": "assets/videos/kittyone-preview.mp4",
+        "poster": "assets/images/kittyone-preview-poster.jpg"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/videos/kittyone.mp4",
+          "poster": "assets/images/kittyone-poster.jpg"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/kittyone-poster.jpg"
+      ],
+      "tile": "wide"
+    },
+    {
+      "slug": "cosmy",
+      "title": "Cosmy",
+      "subtitle": "Création de personnage",
+      "category": "3d",
+      "tech": [
+        "Blender",
+        "Rigging"
+      ],
+      "summary": "Un personnage 3D pensé pour un court métrage.",
+      "description": [
+        "Cosmy est un personnage que j’ai conçu et modélisé sous Blender pour un court métrage. J’ai fait attention à sa topologie pour qu’il soit facile à animer, et travaillé ses expressions pour lui donner du caractère."
+      ],
+      "cover": {
+        "type": "video",
+        "src": "assets/videos/cosmy.mp4",
+        "poster": "assets/images/cosmy-poster.jpg"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/videos/cosmy.mp4",
+          "poster": "assets/images/cosmy-poster.jpg"
+        }
+      ],
+      "context": "Projet personnel"
+    },
+    {
+      "slug": "blueflower",
+      "title": "BlueFlower",
+      "subtitle": "Modélisation et animation",
+      "category": "animation",
+      "tech": [
+        "Blender",
+        "Shading"
+      ],
+      "summary": "Une fleur qui brille dans le noir et ondule comme sous le vent.",
+      "description": [
+        "Une fleur modélisée sous Blender, dont les pétales ondulent comme sous un léger vent. J’ai créé le matériau des pétales pour qu’ils émettent cette lumière bleue sur le fond sombre."
+      ],
+      "cover": {
+        "type": "video",
+        "src": "assets/videos/blueflower-preview.mp4",
+        "poster": "assets/images/blueflower-preview-poster.jpg"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/videos/blueflower.mp4",
+          "poster": "assets/images/blueflower-poster.jpg"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/blueflower-poster.jpg"
+      ],
+      "tile": "wide"
+    },
+    {
+      "slug": "can",
+      "title": "Lemonade Can",
+      "subtitle": "Packshot 3D",
+      "category": "animation",
+      "tech": [
+        "Blender"
+      ],
+      "summary": "Une canette de limonade mise en scène comme dans une pub.",
+      "description": [
+        "Je voulais m’essayer au packshot publicitaire. J’ai modélisé la canette et son étiquette sous Blender, puis je l’ai animée avec des mouvements rapides, en soignant surtout la lumière et les reflets du métal."
+      ],
+      "cover": {
+        "type": "video",
+        "src": "assets/videos/can.mp4",
+        "poster": "assets/images/can-poster.jpg"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/videos/can.mp4",
+          "poster": "assets/images/can-poster.jpg"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/can-1.jpg",
+          "alt": "Canette de limonade en 3D"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/can-1.jpg",
+        "assets/images/can-poster.jpg"
+      ]
+    },
+    {
+      "slug": "balles-rebondissantes",
+      "title": "Balles rebondissantes",
+      "subtitle": "Simulation physique",
+      "category": "animation",
+      "tech": [
+        "Blender",
+        "Physique"
+      ],
+      "summary": "De la mousse, du bois et du métal qui ne rebondissent pas pareil.",
+      "description": [
+        "Un exercice de simulation physique sous Blender. Les trois balles sont en mousse, en bois et en métal, et j’ai réglé le poids et l’élasticité de chacune pour que leur rebond paraisse crédible."
+      ],
+      "cover": {
+        "type": "video",
+        "src": "assets/videos/balles-preview.mp4",
+        "poster": "assets/images/balles-preview-poster.jpg"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/videos/balles.mp4",
+          "poster": "assets/images/balles-poster.jpg"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/balles-poster.jpg"
+      ]
+    },
+    {
+      "slug": "kitty-in-the-bag",
+      "title": "Kitty in the Bag",
+      "subtitle": "Animation 2D / 3D",
+      "category": "animation",
+      "tech": [
+        "Blender"
+      ],
+      "summary": "Un chat noir caché dans un sac en papier.",
+      "description": [
+        "Une petite animation sous Blender qui mélange 2D et 3D : un chat noir qui joue dans un sac en papier. Je voulais garder un côté cartoon."
+      ],
+      "cover": {
+        "type": "video",
+        "src": "assets/videos/kitty-bag-preview.mp4",
+        "poster": "assets/images/kitty-bag-preview-poster.jpg"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/videos/kitty-bag.mp4",
+          "poster": "assets/images/kitty-bag-poster.jpg"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/kitty-bag-poster.jpg"
+      ]
+    },
+    {
+      "slug": "aquarelle-manga",
+      "title": "Esprit manga",
+      "subtitle": "Aquarelle",
+      "category": "illustration",
+      "tech": [
+        "Aquarelle"
+      ],
+      "summary": "Une aquarelle inspirée du manga.",
+      "description": [
+        "Une aquarelle aux couleurs vives, inspirée de l’esthétique manga. Ici je me suis laissé plus de liberté : l’idée était surtout de faire passer une émotion."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/aquarelle-manga-cover.jpg",
+        "alt": "Aquarelle d’inspiration manga"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/aquarelle-manga-1.jpg",
+          "alt": "Aquarelle d’inspiration manga"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/aquarelle-manga-cover.jpg"
+      ],
+      "tile": "tall"
+    },
+    {
+      "slug": "documentaire",
+      "title": "Le développement durable à l’ESIEE",
+      "subtitle": "Documentaire",
+      "category": "video",
+      "context": "ESIEE Paris",
+      "tech": [
+        "Tournage",
+        "Montage"
+      ],
+      "summary": "Un documentaire tourné à l’ESIEE Paris sur le développement durable.",
+      "description": [
+        "Un documentaire réalisé en équipe sur le développement durable à l’ESIEE Paris. J’ai participé à toutes les étapes, de la préparation au tournage et au montage."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/documentaire-cover.jpg",
+        "alt": "Documentaire"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/documentaire-card.jpg",
+          "alt": "Extrait du documentaire"
+        }
+      ],
+      "links": [
+        {
+          "label": "Voir le documentaire",
+          "url": "https://drive.google.com/file/d/1_0ruDmpNh2gv-apFKLHvOsZtVR0cLySs/view?usp=share_link",
+          "type": "live"
+        }
+      ],
+      "shots": [
+        "assets/images/documentaire-card.jpg"
+      ]
+    },
+    {
+      "slug": "friperie",
+      "title": "Friperie",
+      "subtitle": "Animation pour un documentaire",
+      "category": "video",
+      "tech": [
+        "Animation 3D"
+      ],
+      "summary": "Une courte animation réalisée pour un documentaire.",
+      "description": [
+        "Une animation de quelques secondes pour un documentaire : un petit personnage entre dans une friperie. Le style est volontairement simple pour que l’idée passe tout de suite."
+      ],
+      "cover": {
+        "type": "video",
+        "src": "assets/videos/friperie.mp4",
+        "poster": "assets/images/friperie-poster.jpg"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/videos/friperie.mp4",
+          "poster": "assets/images/friperie-poster.jpg"
+        }
+      ],
+      "tile": "wide"
+    },
+    {
+      "slug": "street",
+      "title": "Street",
+      "subtitle": "Animation pour un documentaire",
+      "category": "video",
+      "tech": [
+        "Animation 3D"
+      ],
+      "summary": "Un petit personnage qui jette son déchet à la poubelle, animé pour un documentaire.",
+      "description": [
+        "Une autre courte animation pour un documentaire, avec le même style minimaliste : un geste simple, jeter un déchet dans une poubelle de tri."
+      ],
+      "cover": {
+        "type": "video",
+        "src": "assets/videos/street.mp4",
+        "poster": "assets/images/street-poster.jpg"
+      },
+      "media": [
+        {
+          "type": "video",
+          "src": "assets/videos/street.mp4",
+          "poster": "assets/images/street-poster.jpg"
+        }
+      ]
+    },
+    {
+      "slug": "aquarelle-geisha",
+      "title": "Geisha",
+      "subtitle": "Aquarelle",
+      "category": "illustration",
+      "tech": [
+        "Aquarelle"
+      ],
+      "summary": "Une geisha à l’aquarelle.",
+      "description": [
+        "Une illustration à l’aquarelle, plus traditionnelle que le reste de mes projets. J’ai joué sur la transparence de la peinture pour garder quelque chose de doux. C’est une façon de réunir mon goût pour le dessin et pour la culture japonaise."
+      ],
+      "cover": {
+        "type": "image",
+        "src": "assets/images/aquarelle-geisha-cover.jpg",
+        "alt": "Aquarelle d’une geisha"
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/aquarelle-geisha-1.jpg",
+          "alt": "Aquarelle d’une geisha",
+          "caption": "L’aquarelle entière"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/aquarelle-geisha-2.jpg",
+          "alt": "Aquarelle, détail",
+          "caption": "Le visage"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/aquarelle-geisha-3.jpg",
+          "alt": "Aquarelle, détail",
+          "caption": "Le kimono"
+        }
+      ],
+      "context": "Projet personnel",
+      "shots": [
+        "assets/images/aquarelle-geisha-cover.jpg",
+        "assets/images/aquarelle-geisha-3.jpg"
+      ],
+      "tile": "tall"
+    }
+  ],
+  "skills": [
+    {
+      "group": "Développement",
+      "items": [
+        "C++17",
+        "Java",
+        "Python",
+        "SQL",
+        "JavaScript",
+        "HTML / CSS"
+      ]
+    },
+    {
+      "group": "Graphisme & 3D",
+      "items": [
+        "OpenGL",
+        "GLFW",
+        "Blender",
+        "Fusion 360",
+        "Processing"
+      ]
+    },
+    {
+      "group": "Outils",
+      "items": [
+        "Git",
+        "CMake",
+        "VS Code",
+        "Suite Adobe",
+        "Montage vidéo"
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "name": "C++",
+      "icon": "assets/images/tool-cpp.svg"
+    },
+    {
+      "name": "OpenGL",
+      "icon": "assets/images/tool-opengl.svg"
+    },
+    {
+      "name": "Java",
+      "icon": "assets/images/tool-java.svg"
+    },
+    {
+      "name": "Python",
+      "icon": "assets/images/tool-python.svg"
+    },
+    {
+      "name": "HTML5",
+      "icon": "assets/images/tool-html.svg"
+    },
+    {
+      "name": "CSS3",
+      "icon": "assets/images/tool-css.svg"
+    },
+    {
+      "name": "Git",
+      "icon": "assets/images/tool-git.svg"
+    },
+    {
+      "name": "CMake",
+      "icon": "assets/images/tool-cmake.svg"
+    },
+    {
+      "name": "VS Code",
+      "icon": "assets/images/tool-vscode.svg"
+    },
+    {
+      "name": "Blender",
+      "icon": "assets/images/tool-blender.svg"
+    },
+    {
+      "name": "Fusion 360",
+      "icon": "assets/images/tool-fusion.svg"
+    },
+    {
+      "name": "Processing",
+      "icon": "assets/images/tool-processing.svg"
+    },
+    {
+      "name": "Photoshop",
+      "icon": "assets/images/tool-photoshop.png",
+      "tile": true
+    },
+    {
+      "name": "Illustrator",
+      "icon": "assets/images/tool-illustrator.png",
+      "tile": true
+    },
+    {
+      "name": "InDesign",
+      "icon": "assets/images/tool-indesign.png",
+      "tile": true
+    }
+  ]
+}
