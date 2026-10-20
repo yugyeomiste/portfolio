@@ -268,7 +268,8 @@ main { flex: 1; }
 .thread-summary { color: var(--muted); margin: 0 0 1rem; }
 .thread-text .chips { margin-bottom: 1.25rem; }
 @media (max-width: 860px) {
-  .thread-item, .thread-item.is-flipped { grid-template-columns: 1fr; grid-template-areas: "media" "text"; gap: 1rem; }
+  /* minmax(0, 1fr) : la colonne ne doit jamais s’élargir pour suivre la taille d’origine d’une image */
+  .thread-item, .thread-item.is-flipped { grid-template-columns: minmax(0, 1fr); grid-template-areas: "media" "text"; gap: 1rem; }
   .thread-dot { display: none; }
   .thread-item.is-flipped .thread-text { justify-self: start; text-align: left; }
   .thread-item.is-flipped .thread-text .chips { justify-content: flex-start; }
